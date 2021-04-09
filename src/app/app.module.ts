@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CollabDetailsComponent } from './components/collab-details/collab-details.component';
 import { BudgetUploadComponent } from './components/budget-upload/budget-upload.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
