@@ -1,0 +1,24 @@
+<p>
+  collab-list works!
+</p>
+
+<table>
+  <thead>
+      <tr>
+          <th>Collaborator ID</th>
+          <th>Collaborator Name</th>
+          <th>Team</th>
+          <th>edit</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let collab of collabs">
+          <td>{{collab.id_jira_collab}}</td>
+          <td>{{collab.collab_name}}</td>
+          <td>{{collab.team}}</td>
+          <td><a class="badge badge-warning" routerLink="/collab/{{collab.id_jira_collab}}">
+            Edit
+          </a></td>
+      </tr>
+  </tbody>
+</table>
